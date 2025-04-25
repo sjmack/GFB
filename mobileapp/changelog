@@ -1,15 +1,20 @@
-version 1.1.0 4/3/2025
----------------------------
+## version 1.2.0 4/24/2025
+
+-changed C*0502 to C*05:09
+-revisions to about.html
+
+## version 1.1.0 4/3/2025
+
 -removed DPB1*106:01 from dropdowns
 -added DPB1*14:01 and DPB1*19:01
 -added DPB1*14:01 and DPB1\*19:01
 -removed <small> tag from Solberg citation in about.html
 -added ‘HLA-’ prefix to all loci in locus dropdowns
 
-version 1.0.0 2/13/2025
----------------------------
+## version 1.0.0 2/13/2025
+
 -intial mobile app push
 
-version 0.9.0
----------------------------
+## version 0.9.0
+
 -dev versions stored in https://github.com/liviatran/beta-browser
