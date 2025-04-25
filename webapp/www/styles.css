@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: 'Figtree', sans-serif;
+    background-color: #f8f2eb;
+}
+
+/* navbar */
+
+.navbar *{
+    font-size: 20px;
+}
+
+.navbar-nav > li.active > a {
+    color: #5072A7 !important;
+    font-weight: bold;
+  }
+
+/* title styles */
+.title, .subtitle {
+    text-align: center;
+}
+
+.title {
+    color: #393030;
+    margin-bottom: -50px;
+}
+
+.subtitle {
+    margin-top: 0px;
+}
+
+/* Primary Layout */
+a{ 
+    color:#5072A7;
+}
+
+.primary-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.primary {
+    width: 95%;
+    margin-top: 100px;
+}
+
+#dropdowns {
+    display: flex;
+    justify-content: center;
+}
+
+/* maps container */
+#maps {
+    margin-bottom: 50px; 
+    display: flex;
+    padding: 10px;
+    width: fit-content;
+    height: auto;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Map Sections */
+.leftmap, .rightmap {
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px 2px lightgrey;
+    flex: 1 1 500px;
+}
+
+#left, #right {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    transition: opacity 0.5s ease-out;
+}
+
+/* Left Controls */
+.left-locus-combo,
+.right-locus-combo {
+    width: 105px;
+}
+
+.left-v2-allele,
+.right-v2-allele{
+    width: auto;
+    height: 40px;
+}
+
+/* align text inside drop downs for locus and allele */ 
+select[name="locus"],
+select[name="allele"] {
+  text-align: center;
+  text-align-last: center;
+}
+
+/* Move Buttons */
+.leftmovebuttonscontrol,
+.rightmovebuttonscontrol {
+    float: left;
+    width: 231px;
+    height: 40px;
+    text-align: center;
+}
+
+.movebutton {
+    position: relative;
+    top: 9px;
+    text-align: center;
+}
+
+
+/* Mid Controls */
+.midcontrol {
+    width: 260px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hidden Elements */
+.hiddenbutton {
+    visibility: hidden;
+    width: 0px;
+}
+
+.hiddenContent {
+    position: absolute;
+    visibility: hidden;
+}
+
+/* Secondary Control */
+.secondarycontrol {
+    float: left;
+    overflow: hidden;
+    width: 1202px;
+    height: 40px;
+}
+
+.aboutcontrol {
+    float: left;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+/* Miscellaneous */
+.loadedcombo {
+    padding-top: 10px;
+}
+
+.spacer {
+    float: left;
+    width: 1302px;
+    height: 5px;
+}
+
+.systemselect {
+    position: relative;
+    top: 9px;
+    left: 6px;
+    visibility: hidden;
+}
+
+/* Wrapper */
+.wrapper {
+    position: absolute;
+    width: 640px;
+}
+height: 420px;
+
+.mid-align-image {
+    /* Image Alignment */
+    vertical-align: middle;
+}
+
+.banner {
+    /* Banner Section */
+    float: left;
+    width: 640px;
+    height: 100px;
+}
+
+.headtitle {
+    /* Header Title */
+    position: relative;
+    top: 20px;
+    left: 5px;
+    float: right;
+    width: 460px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* Decorative Elements */
+.line {
+    float: left;
+    width: 640px;
+    height: 2px;
+    background: blue;
+}
+
+.break {
+    float: left;
+    width: 640px;
+    height: 10px;
+}
+
+/* Text Sections */
+.text,
+.intro,
+.descr {
+    float: left;
+    width: 640px;
+}
+
+.text {
+    height: 300px;
+}
+
+.intro {
+    height: 30px;
+}
+
+.descr {
+    height: 195px;
+}
+
+
+/* about section */
+
+.about-title {
+    text-align: center;
+    margin-bottom: 35px;
+    margin-top: 50px;
+}
+
+.about-section-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-section {
+    width: 45%;
+    height: 80vh;
+}
+
+/* make navbar this color also */ 
+.about-title h2 {
+    color:#5072A7;
+}
+.about-section p {
+    font-size: 25px;
+    margin: 30px;
+    text-align: justify;
+}

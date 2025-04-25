@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Browser for Comparing Global HLA Allele Frequencies</title>
+    <meta name="copyright" content="Livia Tran, Steven Mack 2025" />
+    <meta
+      name="description"
+      content="Immunogenomics Data-Analysis Working Group browser allele frequency maps"
+    />
+    <meta name="robots" content="nofollow" />
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="www/styles.css"type="text/css" media="screen"/>    
+
+
+	<script type="text/javascript" src="browse-maps.js"></script>
+  </head>
+
+  <body onLoad = 'importHTML();'>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="#" style ="display:flex; align-items: center;">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"  width="40" height="35" class="size-6" style = "margin-right:2px;">
+           <path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0 1 12 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 0 1 3 12c0-1.605.42-3.113 1.157-4.418" />
+        </svg>GFB</a></a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li id="compareLink" class="active">
+            <a href="javascript:void(0);" onclick="showPage('compare')">Compare Maps</a>
+          </li>
+          <li id="aboutLink">
+            <a href="javascript:void(0);" onclick="showPage('about')">About</a>
+          </li>
+        </ul>
+      </div>
+      </nav>
+
+  <div id ='compare' class="page">    
+    <div class='header'>
+      <h1 class = 'title'>Global HLA Allele Frequency Browser (GFB)</h1></span>
+
+    <div class = 'primary-container'>
+      <div id="primary" name="primary" class="primary">
+        <div id = 'maps'>
+          <div id="leftmap" name="leftmap" class="leftmap">
+            <img id='left' src='images/a0101.jpg'>
+          </div>
+          <div id="rightmap" name="rightmap" class="rightmap">
+            <img id='left' src='images/b0702.jpg'>
+          </div>
+        </div>
+        
+      <div id = 'dropdowns'>
+        <div
+          id="left-locus-combo"
+          name="left-locus-combo"
+          class="left-locus-combo"
+        ></div>
+        <div
+          id="left-v2-allele"
+          name="left-v2-allele"
+          class="left-v2-allele"
+        ></div>
+
+        <div
+          id="leftmovebuttonscontrol"
+          name="leftmovebuttonscontrol"
+          class="leftmovebuttonscontrol"
+        >
+          <input
+            type="button"
+            onclick="goBack(1);"
+            class="movebutton"
+            value="Previous Allele"
+          />
+          <input
+            type="button"
+            onclick="goForward(1);"
+            class="movebutton"
+            value="Next Allele"
+          />
+        </div>
+
+        <div id="midcontrol" name="midcontrol" class="midcontrol">
+          <div id = 'showButton'>
+          </div>
+          <div id="cancelButton">
+            <input type='button' onclick='clearMaps();' value='Clear Maps' class='movebutton'/>
+          </div>
+        </div>
+
+        <div
+          id="right-locus-combo"
+          name="right-locus-combo"
+          class="right-locus-combo"
+        ></div>
+        <div
+          id="right-v2-allele"
+          name="right-v2-allele"
+          class="right-v2-allele"
+        ></div>
+        
+        <div
+          id="rightmovebuttonscontrol"
+          name="rightmovebuttonscontrol"
+          class="rightmovebuttonscontrol"
+        >
+          <input
+            type="button"
+            value="Previous Allele"
+            class="movebutton"
+            onclick="goBack(2)"
+          />
+          <input
+            type="button"
+            value="Next Allele"
+            class="movebutton"
+            onclick="goForward(2)"
+          />
+        </div>
+      </div>
+
+        <div
+          id="secondarycontrol"
+          name="secondarycontrol"
+          class="secondarycontrol"
+        >
+          <form name="systemselect" class="systemselect">
+            <select name="system" onChange="switchSystem(this);">
+              <option value="0">Select a System</option>
+              <option value="HLA-combos.html" selected>
+                HLA: Solberg Compilation
+              </option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div id="about" class="page" style="display: none;">
+    <div class="about-container">
+      <body>
+        <div class="about-title">
+          <h1>Global Frequency Browser (GFB)</h1>
+          <h2>version 1.0.0 // April 2025</h2>
+        </div>
+        <div class="about-section-container">
+          <div class="about-section">
+            <p>
+              This is a browser for the HLA allele-frequency data published by
+              <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2632948/"target="NewWindow">Solberg</a> et. al. and visualized as color allele frequency heat maps.
+            </p>
+
+            <p>
+              Not every identified HLA locus or allele will be represented by a map. 
+              No maps are available for alleles in the Solberg data compilation that were observed only in admixed or migrant populations.
+            </p>
+
+            <p>
+              White dots on the maps represent indigenous populations included in the Solberg dataset.
+            </p>
+
+            <p>All maps were generated using the Searching Shared HLA Amino Acid Residue Prevalence (<a href="https://cran.r-project.org/web/packages/SSHAARP/index.html", target = "NewWindow">SSHAARP</a>) R package. </p>
+
+            <p>
+              Questions about the GFB can be directed to
+              <b>livia.tran@ucsf.edu</b> or <b>steven.mack@ucsf.edu.</b>
+            </p>
+          </div>
+        </div>
+      </body>
+
+    <iframe id="hiddenContent" width="2" height="2" class="hiddenContent">
+    </iframe>
+
+    <script type="text/javascript">
+      var gaJsHost =
+        "https:" == document.location.protocol ? "https://ssl." : "http://www.";
+      document.write(
+        unescape(
+          "%3Cscript src='" +
+            gaJsHost +
+            "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"
+        )
+      );
+    </script>
+    <script type="text/javascript">
+      try {
+        var pageTracker = _gat._getTracker("UA-13134104-1");
+        pageTracker._trackPageview();
+      } catch (err) {}
+    </script>
+  </body>
+</html>
