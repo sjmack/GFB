@@ -1,7 +1,8 @@
-## version 1.0.1
+## version 1.0.2 4/30/2025
+- deleted DPB1*107:01
 
-- moved DPB1\*111:01 to the end of the selection drop down for DPB1
+## version 1.0.1 4/29/2025
+- moved DPB1*111:01 to the end of the selection drop down for DPB1
 
-## version 1.0.0
-
+## version 1.0.0 4/25/2025
 - initial release
