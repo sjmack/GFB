@@ -24,7 +24,7 @@ var mapsize;
 //alleles with only admixed or mig populations
 const alleles = [
     "A*68:15", "A*24:22", "A*02:60", "A*34:03", "A*74:09", "A*74:11", "A*03:12", "A*26:07", "A*68:08", "A*33:05", 
-    "B*07:20", "B*15:42", "B*08:12", "B*35:33", "B*57:06", "B*40:27", "B*51:13", "B*78:05", "B*51:44", 
+    "B*07:20", "B*15:42", "B*08:12", "B*35:33", "B*57:06", "B*40:27", "B*51:13", "B*78:05", "B*51:44N", 
     "C*15:09", "C*06:08", "C*06:09", "C*08:13", "C*16:08", "C*17:04", 
     "DRB1*01:06", "DRB1*13:22", "DRB1*13:16", "DRB1*03:06", "DRB1*16:07", "DRB1*11:15", "DRB1*13:21", "DRB1*14:16", 
     "DRB1*14:24", "DRB1*13:14"
@@ -377,7 +377,7 @@ function openAbout() {
 	<option value="A*26:08">A*26:08</option>
 	<option value="A*26:09">A*26:09</option>
 	<option value="A*26:10">A*26:10</option>
-	<option value="A*26:11">A*26:11</option>
+	<option value="A*26:11N">A*26:11N</option>
 	<option value="A*26:12">A*26:12</option>
 	<option value="A*26:14">A*26:14</option>
 	<option value="A*26:16">A*26:16</option>
@@ -463,7 +463,7 @@ function openAbout() {
 	<option value="B*13:02">B*13:02</option>
 	<option value="B*13:03">B*13:03</option>
 	<option value="B*13:04">B*13:04</option>
-	<option value="B*13:07">B*13:07</option>
+	<option value="B*13:07N">B*13:07N</option>
 	<option value="B*13:09">B*13:09</option>
 	<option value="B*13:11">B*13:11</option>
 	<option value="B*14:01">B*14:01</option>
@@ -684,9 +684,9 @@ function openAbout() {
 	<option value="B*51:18">B*51:18</option>
 	<option value="B*51:21">B*51:21</option>
 	<option value="B*51:22">B*51:22</option>
-	<option value="B*51:27">B*51:27</option>
+	<option value="B*51:27N">B*51:27N</option>
 	<option value="B*51:34">B*51:34</option>
-	<option value="B*51:44">B*51:44</option>
+	<option value="B*51:44N">B*51:44N</option>
 	<option value="B*52:01">B*52:01</option>
 	<option value="B*52:02">B*52:02</option>
 	<option value="B*53:01">B*53:01</option>
@@ -750,10 +750,10 @@ function openAbout() {
 	<option value="C*03:08">C*03:08</option>
 	<option value="C*03:09">C*03:09</option>
 	<option value="C*03:10">C*03:10</option>
-	<option value="C*03:12">C*03:12</option>
 	<option value="C*03:13">C*03:13</option>
 	<option value="C*03:15">C*03:15</option>
 	<option value="C*03:16">C*03:16</option>
+	<option value="C*03:307">C*03:307</option>
 	<option value="C*04:01">C*04:01</option>
 	<option value="C*04:03">C*04:03</option>
 	<option value="C*04:04">C*04:04</option>
@@ -868,7 +868,7 @@ function openAbout() {
 	<option value="DPB1*56:01">DPB1*56:01</option>
 	<option value="DPB1*59:01">DPB1*59:01</option>
 	<option value="DPB1*60:01">DPB1*60:01</option>
-	<option value="DPB1*61:01">DPB1*61:01</option>
+	<option value="DPB1*61:01N">DPB1*61:01N</option>
 	<option value="DPB1*63:01">DPB1*63:01</option>
 	<option value="DPB1*65:01">DPB1*65:01</option>
 	<option value="DPB1*66:01">DPB1*66:01</option>
@@ -895,7 +895,7 @@ function openAbout() {
 	<option value="DQA1*05:01">DQA1*05:01</option>
 	<option value="DQA1*06:01">DQA1*06:01</option>
 	<option value="DQB1*02:01">DQB1*02:01</option>
-	<option value="DQB1*02:03">DQB1*02:03</option>
+	<option value="DQB1*02:180">DQB1*02:180</option>
 	<option value="DQB1*03:01">DQB1*03:01</option>
 	<option value="DQB1*03:02">DQB1*03:02</option>
 	<option value="DQB1*03:03">DQB1*03:03</option>
@@ -1243,7 +1243,7 @@ function openAbout() {
 	<option value="A*26:08">A*26:08</option>
 	<option value="A*26:09">A*26:09</option>
 	<option value="A*26:10">A*26:10</option>
-	<option value="A*26:11">A*26:11</option>
+	<option value="A*26:11N">A*26:11N</option>
 	<option value="A*26:12">A*26:12</option>
 	<option value="A*26:14">A*26:14</option>
 	<option value="A*26:16">A*26:16</option>
@@ -1329,7 +1329,7 @@ function openAbout() {
 	<option value="B*13:02">B*13:02</option>
 	<option value="B*13:03">B*13:03</option>
 	<option value="B*13:04">B*13:04</option>
-	<option value="B*13:07">B*13:07</option>
+	<option value="B*13:07N">B*13:07N</option>
 	<option value="B*13:09">B*13:09</option>
 	<option value="B*13:11">B*13:11</option>
 	<option value="B*14:01">B*14:01</option>
@@ -1550,9 +1550,9 @@ function openAbout() {
 	<option value="B*51:18">B*51:18</option>
 	<option value="B*51:21">B*51:21</option>
 	<option value="B*51:22">B*51:22</option>
-	<option value="B*51:27">B*51:27</option>
+	<option value="B*51:27N">B*51:27N</option>
 	<option value="B*51:34">B*51:34</option>
-	<option value="B*51:44">B*51:44</option>
+	<option value="B*51:44N">B*51:44N</option>
 	<option value="B*52:01">B*52:01</option>
 	<option value="B*52:02">B*52:02</option>
 	<option value="B*53:01">B*53:01</option>
@@ -1616,10 +1616,10 @@ function openAbout() {
 	<option value="C*03:08">C*03:08</option>
 	<option value="C*03:09">C*03:09</option>
 	<option value="C*03:10">C*03:10</option>
-	<option value="C*03:12">C*03:12</option>
 	<option value="C*03:13">C*03:13</option>
 	<option value="C*03:15">C*03:15</option>
 	<option value="C*03:16">C*03:16</option>
+	<option value="C*03:307">C*03:307</option>
 	<option value="C*04:01">C*04:01</option>
 	<option value="C*04:03">C*04:03</option>
 	<option value="C*04:04">C*04:04</option>
@@ -1735,7 +1735,7 @@ function openAbout() {
 	<option value="DPB1*56:01">DPB1*56:01</option>
 	<option value="DPB1*59:01">DPB1*59:01</option>
 	<option value="DPB1*60:01">DPB1*60:01</option>
-	<option value="DPB1*61:01">DPB1*61:01</option>
+	<option value="DPB1*61:01N">DPB1*61:01N</option>
 	<option value="DPB1*63:01">DPB1*63:01</option>
 	<option value="DPB1*65:01">DPB1*65:01</option>
 	<option value="DPB1*66:01">DPB1*66:01</option>
@@ -1761,7 +1761,7 @@ function openAbout() {
 	<option value="DQA1*05:01">DQA1*05:01</option>
 	<option value="DQA1*06:01">DQA1*06:01</option>
 	<option value="DQB1*02:01">DQB1*02:01</option>
-	<option value="DQB1*02:03">DQB1*02:03</option>
+	<option value="DQB1*02:180">DQB1*02:180</option>
 	<option value="DQB1*03:01">DQB1*03:01</option>
 	<option value="DQB1*03:02">DQB1*03:02</option>
 	<option value="DQB1*03:03">DQB1*03:03</option>

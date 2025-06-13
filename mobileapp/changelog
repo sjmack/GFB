@@ -1,3 +1,8 @@
+# version 1.2.3 6/12/2025
+- changed DQB1*02:03 to DQB1*02:180 (renamed in November 2020) and C*03:12 to C*03:307 (renamed in October 2015) in the Solberg dataset
+- added the null (N) expression variant to the A*26:11, B*51:27, B*13:07, B*51:44, and DPB1*61:01 alleles in the Solberg dataset
+- changed B*51:44 to B*51:44N in list of admixed alleles
+
 # version 1.2.2 4/30/2025
 - deleted DPB1*107:01
 
@@ -5,13 +10,14 @@
 -moved DPB1*111:01 to the end of the selection drop down for DPB1
 
 ## version 1.2.0 4/24/2025
+
 -changed C*0502 to C*05:09
 -revisions to about.html
 
 ## version 1.1.0 4/3/2025
 -removed DPB1*106:01 from dropdowns
 -added DPB1*14:01 and DPB1*19:01
--added DPB1*14:01 and DPB1\*19:01
+-added DPB1*14:01 and DPB1*19:01
 -removed <small> tag from Solberg citation in about.html
 -added ‘HLA-’ prefix to all loci in locus dropdowns
 
